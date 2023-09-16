@@ -3,7 +3,7 @@
     background-color: #FAF6E8;
     font-family: 'Source Code Pro', monospace;
     /*max-width: 100%;*/
-    margin: 0 80px;
+    /*margin: 0 80px;*/
 }
 
 header {
@@ -13,6 +13,7 @@ header {
 
 body {
     border: 1px solid black;
+    width: 80%;
 }
 
 .welcomeTitle {
@@ -48,4 +49,8 @@ body {
 
 .icon {
     font-size: 32px;
+}
+
+#aboutMeIcon {
+    width: 70px;
 }
