@@ -7,16 +7,22 @@
 }
 
 header {
-    padding: 0 150px;
-    display: flex;
-    justify-content: space-between;
-    /*border: 1px solid black;*/
-    transition: background-color 0.8s;
+    padding: 20px;
 }
-/*
-header:hover {
-    background-color: blue;
-}*/
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
 
 .header_home {
     background-color: inherit;
