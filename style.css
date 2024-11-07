@@ -7,35 +7,48 @@
 }
 
 header {
-    padding: 20px;
+    padding: 20px 0px 5px;
+    /*border: 1px solid black;*/
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav li {
-    margin-right: 100px;
+    margin-right: 80px;
 }
 
-nav a {
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.header_home {
+/*
+  .header_home {
     background-color: inherit;
 }
 
 .header_aboutMe {
     background-color: aquamarine;
-}
+}*/
 
 body {
     /*border: 1px solid black;*/
     width: 90%;
     margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    nav li {
+      margin: 10px 20px; /* Reduce margin for smaller screens */
+    }
+    body {
+        width: 100%; /*Goes back to regular width for smaller screens*/
+    }
 }
 
 .welcomeTitle {
@@ -54,21 +67,26 @@ body {
     margin: 0 15%;
 }
 
-.links {
+.row1 {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 85%;
+    width: 75%;
     /*position: absolute;*/
     /*border: 1px solid black;*/
-    margin: 50px auto;
+    margin: 70px auto;
 }
 
-@media screen and (max-width: 600px) {
-    .icons {
-      flex-direction: column;
-    }
+.row2 {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;
+    /*position: absolute;*/
+    /*border: 1px solid black;*/
+    margin: auto auto;
 }
 
 .icon {
