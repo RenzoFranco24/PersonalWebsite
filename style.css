@@ -195,3 +195,31 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.form_confirmation {
+    width: 50%;
+    margin: 100px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.form_confirmation h2 {
+    color: #333;
+    background-color: white;
+}
+.form_confirmation p {
+    font-size: 18px;
+    color: #666;
+    background-color: white;
+}
+.form_confirmation a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}

@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    // Send email (modify email address)
+    // Send email (modify this email address)
     $to = "renzo.franco24@gmail.com"; 
     $subject = "New Contact Form Submission from $name";
     $headers = "From: $email\r\nReply-To: $email\r\nContent-Type: text/plain; charset=UTF-8";
@@ -19,7 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $emailBody .= "Message:\n$message\n";
 
     if (mail($to, $subject, $emailBody, $headers)) {
+        // Redirect to confirmation page
         header("Location: form_confirmation.html");
+        exit;
     } else {
         echo "Error sending message.";
     }
